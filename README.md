@@ -45,13 +45,13 @@ Given two positive integers `a` and `b`, compute the sum of their squares:
 a^2 + b^2
 ```
 
-For this answer, `a = 3` and `b = 4`.
+For this submitted answer, `a = 856` and `b = 957`.
 
 ### Answer Documents
 
 | Answer | Document | Summary |
 | --- | --- | --- |
-| Answer 1 | [docs/python-village/INI2/answer-1.md](docs/python-village/INI2/answer-1.md) | Uses Python variables and exponentiation to print `25`. |
+| Answer 1 | [docs/python-village/INI2/answer-1.md](docs/python-village/INI2/answer-1.md) | Uses Python variables and exponentiation to print `1648585`. |
 
 ### Engineering Performance
 
