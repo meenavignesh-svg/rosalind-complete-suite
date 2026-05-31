@@ -8,25 +8,25 @@ This Python Village problem introduces variables and arithmetic expressions. Giv
 a^2 + b^2
 ```
 
-For this answer, the provided values are:
+For this submitted answer, the provided Rosalind dataset values are:
 
 ```text
-a = 3
-b = 4
+a = 856
+b = 957
 ```
 
 ## Answer 1
 
 ```python
-a = 3
-b = 4
+a = 856
+b = 957
 print((a ** 2) + (b ** 2))
 ```
 
 ## Output
 
 ```text
-25
+1648585
 ```
 
 ## Explanation
@@ -38,10 +38,10 @@ a ** 2
 b ** 2
 ```
 
-Then the two squared values are added together. With `a = 3` and `b = 4`, the calculation is:
+Then the two squared values are added together. With `a = 856` and `b = 957`, the calculation is:
 
 ```text
-3^2 + 4^2 = 9 + 16 = 25
+856^2 + 957^2 = 732736 + 915849 = 1648585
 ```
 
 The final result is printed to standard output.
