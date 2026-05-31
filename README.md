@@ -1,12 +1,12 @@
 # Rosalind Complete Suite
 
-A growing portfolio of Rosalind solutions, beginning with the **Python Village** track. Each completed problem will include the question context first, followed by one or more verified answers, explanation, and engineering complexity notes.
+A growing portfolio of Rosalind solutions, beginning with the **Python Village** track. Each completed problem will include the question context first, followed by one or more verified answer documents, explanation, and engineering complexity notes.
 
 ## Python Village Progress
 
-| Problem | Title | Status | Answers |
+| Problem | Title | Status | Answer Documents |
 | --- | --- | --- | --- |
-| INI1 | Installing Python | Complete | 1 |
+| INI1 | Installing Python | Complete | [Answer 1](docs/python-village/INI1/answer-1.md) |
 
 ---
 
@@ -22,31 +22,11 @@ import this
 
 This prints **The Zen of Python**, a short set of guiding principles for writing readable, explicit, and maintainable Python code.
 
-### Answer 1
+### Answer Documents
 
-```text
-The Zen of Python, by Tim Peters
-
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-```
+| Answer | Document | Summary |
+| --- | --- | --- |
+| Answer 1 | [docs/python-village/INI1/answer-1.md](docs/python-village/INI1/answer-1.md) | Runs `import this` and records the Zen of Python output. |
 
 ### Computational Approach
 
@@ -56,7 +36,7 @@ This problem does not require a custom algorithm. Python's `this` module contain
 
 | Solution | Time Complexity | Space Complexity | Notes |
 | --- | --- | --- | --- |
-| `import this` | O(1) | O(1) | Prints a fixed-size built-in text from Python's standard library. |
+| Answer 1: `import this` | O(1) | O(1) | Prints a fixed-size built-in text from Python's standard library. |
 
 ## Repository Goal
 
@@ -64,8 +44,10 @@ For each completed Rosalind Python Village problem, this repository will maintai
 
 | Asset | Purpose |
 | --- | --- |
-| `README.md` | Question, answer(s), explanation, and complexity notes. |
+| Root `README.md` | Portfolio table of contents and progress tracker. |
+| Per-problem `README.md` | Question context, answer links, solution comparison, and complexity summary. |
+| `answer-1.md`, `answer-2.md`, etc. | Standalone document for each individual answer. |
 | `index.html` | Live GitHub Pages interface for the problem. |
 | Solution script | Verified source code or submitted answer. |
 
-Multiple answers for the same problem will be preserved as separate solution variants and compared clearly.
+Multiple answers for the same problem will be preserved as separate solution documents and compared clearly.
