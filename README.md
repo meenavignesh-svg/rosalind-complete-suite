@@ -1,12 +1,13 @@
 # Rosalind Complete Suite
 
-A growing portfolio of Rosalind solutions, beginning with the **Python Village** track. Each completed problem will include the question context first, followed by one or more verified answer documents, explanation, and engineering complexity notes.
+A growing portfolio of Rosalind solutions, beginning with the **Python Village** track. Each completed problem includes the question context first, followed by one or more verified answer documents, explanation, live GitHub Pages work, and engineering complexity notes.
 
 ## Python Village Progress
 
-| Problem | Title | Status | Answer Documents |
-| --- | --- | --- | --- |
-| INI1 | Installing Python | Complete | [Answer 1](docs/python-village/INI1/answer-1.md) |
+| Problem | Title | Status | Answer Documents | Live Page |
+| --- | --- | --- | --- | --- |
+| INI1 | Installing Python | Complete | [Answer 1](docs/python-village/INI1/answer-1.md) | [Live page](docs/python-village/INI1/) |
+| INI2 | Variables and Some Arithmetic | Complete | [Answer 1](docs/python-village/INI2/answer-1.md) | [Live page](docs/python-village/INI2/) |
 
 ---
 
@@ -28,15 +29,35 @@ This prints **The Zen of Python**, a short set of guiding principles for writing
 | --- | --- | --- |
 | Answer 1 | [docs/python-village/INI1/answer-1.md](docs/python-village/INI1/answer-1.md) | Runs `import this` and records the Zen of Python output. |
 
-### Computational Approach
-
-This problem does not require a custom algorithm. Python's `this` module contains the encoded Zen text and prints it when imported. The solution verifies that Python is installed and that the interpreter can execute a standard-library import.
-
 ### Engineering Performance
 
 | Solution | Time Complexity | Space Complexity | Notes |
 | --- | --- | --- | --- |
 | Answer 1: `import this` | O(1) | O(1) | Prints a fixed-size built-in text from Python's standard library. |
+
+## INI2 - Variables and Some Arithmetic
+
+### Question
+
+Given two positive integers `a` and `b`, compute the sum of their squares:
+
+```text
+a^2 + b^2
+```
+
+For this answer, `a = 3` and `b = 4`.
+
+### Answer Documents
+
+| Answer | Document | Summary |
+| --- | --- | --- |
+| Answer 1 | [docs/python-village/INI2/answer-1.md](docs/python-village/INI2/answer-1.md) | Uses Python variables and exponentiation to print `25`. |
+
+### Engineering Performance
+
+| Solution | Time Complexity | Space Complexity | Notes |
+| --- | --- | --- | --- |
+| Answer 1: `a ** 2 + b ** 2` | O(1) | O(1) | Performs a fixed number of arithmetic operations. |
 
 ## Repository Goal
 
