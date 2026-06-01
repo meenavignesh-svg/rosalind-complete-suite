@@ -1,5 +1,7 @@
 # INI2 - Variables and Some Arithmetic: Answer 1
 
+**Completed:** 2026-05-31
+
 ## Question
 
 This Python Village problem introduces variables and arithmetic expressions. Given two positive integers `a` and `b`, the task is to calculate the sum of their squares:
