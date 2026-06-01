@@ -1,5 +1,7 @@
 # INI3 - Strings and Lists
 
+**Completed:** 2026-06-01
+
 ## Question
 
 Given a string `s` of length at most 200 letters and four integers `a`, `b`, `c`, and `d`, return the slice of this string from indices `a` through `b` and `c` through `d`, inclusively, with a space between the two slices.
