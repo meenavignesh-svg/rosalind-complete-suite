@@ -8,6 +8,7 @@ A growing portfolio of Rosalind solutions, beginning with the **Python Village**
 | --- | --- | --- | --- | --- |
 | INI1 | Installing Python | Complete | [Answer 1](docs/python-village/INI1/answer-1.md) | [Live page](docs/python-village/INI1/) |
 | INI2 | Variables and Some Arithmetic | Complete | [Answer 1](docs/python-village/INI2/answer-1.md) | [Live page](docs/python-village/INI2/) |
+| INI3 | Strings and Lists | Complete | [Answer 1](docs/python-village/INI3/answer-1.md) | [Live page](docs/python-village/INI3/) |
 
 ---
 
@@ -58,6 +59,26 @@ For this submitted answer, `a = 856` and `b = 957`.
 | Solution | Time Complexity | Space Complexity | Notes |
 | --- | --- | --- | --- |
 | Answer 1: `a ** 2 + b ** 2` | O(1) | O(1) | Performs a fixed number of arithmetic operations. |
+
+## INI3 - Strings and Lists
+
+### Question
+
+Given a string `s` of length at most 200 letters and four integers `a`, `b`, `c`, and `d`, return the inclusive slices `s[a:b]` and `s[c:d]` with a space between them. In Python, that means using `s[a:b+1]` and `s[c:d+1]`.
+
+For this submitted answer, `a = 43`, `b = 47`, `c = 167`, and `d = 174`.
+
+### Answer Documents
+
+| Answer | Document | Summary |
+| --- | --- | --- |
+| Answer 1 | [docs/python-village/INI3/answer-1.md](docs/python-village/INI3/answer-1.md) | Uses inclusive slicing to print `Sorex korschun`. |
+
+### Engineering Performance
+
+| Solution | Time Complexity | Space Complexity | Notes |
+| --- | --- | --- | --- |
+| Answer 1: inclusive slicing | O(k) | O(k) | `k` is the total number of returned slice characters. |
 
 ## Repository Goal
 
