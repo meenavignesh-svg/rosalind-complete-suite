@@ -1,5 +1,7 @@
 # INI1 - Installing Python: Answer 1
 
+**Completed:** 2026-05-31
+
 ## Question
 
 Rosalind's first Python Village problem introduces the Python interpreter. The task is to run Python and execute the built-in standard-library import:
