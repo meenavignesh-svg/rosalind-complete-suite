@@ -1,18 +1,20 @@
 # Rosalind Complete Suite
 
-A growing portfolio of Rosalind solutions, beginning with the **Python Village** track. Each completed problem includes the question context first, followed by one or more verified answer documents, explanation, live GitHub Pages work, and engineering complexity notes.
+A growing portfolio of Rosalind solutions, beginning with the **Python Village** track. Each completed problem includes the question context first, completion date, one or more verified answer documents, explanation, live GitHub Pages work, and engineering complexity notes.
 
 ## Python Village Progress
 
-| Problem | Title | Status | Answer Documents | Live Page |
-| --- | --- | --- | --- | --- |
-| INI1 | Installing Python | Complete | [Answer 1](docs/python-village/INI1/answer-1.md) | [Live page](docs/python-village/INI1/) |
-| INI2 | Variables and Some Arithmetic | Complete | [Answer 1](docs/python-village/INI2/answer-1.md) | [Live page](docs/python-village/INI2/) |
-| INI3 | Strings and Lists | Complete | [Answer 1](docs/python-village/INI3/answer-1.md) | [Live page](docs/python-village/INI3/) |
+| Problem | Title | Completed | Status | Answer Documents | Live Page |
+| --- | --- | --- | --- | --- | --- |
+| INI1 | Installing Python | 2026-05-31 | Complete | [Answer 1](docs/python-village/INI1/answer-1.md) | [Live page](docs/python-village/INI1/) |
+| INI2 | Variables and Some Arithmetic | 2026-05-31 | Complete | [Answer 1](docs/python-village/INI2/answer-1.md) | [Live page](docs/python-village/INI2/) |
+| INI3 | Strings and Lists | 2026-06-01 | Complete | [Answer 1](docs/python-village/INI3/answer-1.md) | [Live page](docs/python-village/INI3/) |
 
 ---
 
 ## INI1 - Installing Python
+
+**Completed:** 2026-05-31
 
 ### Question
 
@@ -38,6 +40,8 @@ This prints **The Zen of Python**, a short set of guiding principles for writing
 
 ## INI2 - Variables and Some Arithmetic
 
+**Completed:** 2026-05-31
+
 ### Question
 
 Given two positive integers `a` and `b`, compute the sum of their squares:
@@ -61,6 +65,8 @@ For this submitted answer, `a = 856` and `b = 957`.
 | Answer 1: `a ** 2 + b ** 2` | O(1) | O(1) | Performs a fixed number of arithmetic operations. |
 
 ## INI3 - Strings and Lists
+
+**Completed:** 2026-06-01
 
 ### Question
 
@@ -87,7 +93,7 @@ For each completed Rosalind Python Village problem, this repository will maintai
 | Asset | Purpose |
 | --- | --- |
 | Root `README.md` | Portfolio table of contents and progress tracker. |
-| Per-problem `README.md` | Question context, answer links, solution comparison, and complexity summary. |
+| Per-problem `README.md` | Question context, completion date, answer links, solution comparison, and complexity summary. |
 | `answer-1.md`, `answer-2.md`, etc. | Standalone document for each individual answer. |
 | `index.html` | Live GitHub Pages interface for the problem. |
 | Solution script | Verified source code or submitted answer. |
