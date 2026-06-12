@@ -15,6 +15,10 @@ a = 856
 b = 957
 ```
 
+## Completion Date
+
+**Completed:** 2026-05-31
+
 ## Problem Summary
 
 Store the two integers, square each one, add the results, and print the final value.
