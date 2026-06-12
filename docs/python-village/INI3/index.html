@@ -12,24 +12,23 @@
     nav { margin-bottom: 28px; display: flex; flex-wrap: wrap; gap: 14px; }
     a { color: var(--emerald); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    header { padding: 28px 0 34px; border-bottom: 1px solid var(--line); }
+    header, section { border-bottom: 1px solid var(--line); }
+    header { padding: 28px 0 34px; }
+    section { padding: 30px 0; }
     .eyebrow { color: var(--emerald); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: .82rem; }
-    h1 { margin: 8px 0 12px; font-size: clamp(2rem, 5vw, 4.3rem); line-height: 1; letter-spacing: -.03em; }
+    h1 { margin: 8px 0 12px; font-size: clamp(2rem, 5vw, 4.3rem); line-height: 1; }
     h2 { margin: 0 0 14px; font-size: clamp(1.35rem, 3vw, 2rem); }
     h3 { margin: 0 0 10px; color: var(--emerald); font-size: 1.05rem; }
     p { color: var(--muted); margin: 0 0 14px; max-width: 820px; }
-    section { padding: 30px 0; border-bottom: 1px solid var(--line); }
     .layout { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); gap: 20px; align-items: start; }
-    .panel { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
+    .panel, .metric { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
     pre { margin: 0; padding: 18px; overflow-x: auto; white-space: pre-wrap; background: var(--code); border: 1px solid var(--line); border-radius: 8px; color: var(--text); }
     code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+    .date, .result { color: var(--emerald); font-size: 1.7rem; font-weight: 800; word-break: break-word; }
     button { border: 1px solid rgba(80, 200, 120, .65); color: var(--text); background: transparent; border-radius: 8px; min-height: 40px; padding: 8px 12px; cursor: pointer; }
     button.active, button:hover { background: var(--emerald-strong); border-color: var(--emerald-strong); }
-    .metrics { display: grid; gap: 12px; }
-    .metric { background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
-    .metric strong { display: block; color: var(--emerald); font-size: 1.5rem; }
     .controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
-    .result { color: var(--emerald); font-size: 2rem; font-weight: 800; word-break: break-word; }
+    .metric strong { display: block; color: var(--emerald); font-size: 1.5rem; }
     @media (max-width: 760px) { .layout { grid-template-columns: 1fr; } main { width: min(100% - 24px, 1080px); } }
   </style>
 </head>
@@ -41,7 +40,7 @@
       <a href="answer-1.md">Answer 1 document</a>
     </nav>
     <header>
-      <div class="eyebrow">Python Village · INI3</div>
+      <div class="eyebrow">Python Village - INI3</div>
       <h1>Strings and Lists</h1>
       <p>Extract two inclusive slices from a string and print them with a space between them.</p>
     </header>
@@ -60,6 +59,11 @@
     </section>
 
     <section>
+      <h2>Completion Date</h2>
+      <p class="date">2026-06-01</p>
+    </section>
+
+    <section>
       <h2>Answer 1</h2>
       <pre><code>s = "4Dt0IdYSzQOk1yltD8FfbCfGHaFZEOIecHXwIrTYriISorexHiyPRcdrFLWwN7Bi0fVK0aqgylLGO52ZU67ivxzIvuvcUVxe2ATqKeHskwfx1MTLtfQWIZZj3ugC8CiQRejz6ne05iwcfj9C3p0gK6U4bX0kwFWJySngI1tkorschunVy8fXf43Vs."
 a, b, c, d = 43, 47, 167, 174
@@ -68,7 +72,7 @@ print(f"{s[a:b+1]} {s[c:d+1]}")</code></pre>
 
     <section class="layout">
       <div>
-        <h2>Explanation</h2>
+        <h2>Code Explanation</h2>
         <p>The first slice is <code>s[43:48]</code>, which returns <code>Sorex</code>. The second slice is <code>s[167:175]</code>, which returns <code>korschun</code>. The formatted string joins them with one space.</p>
       </div>
       <aside class="panel">
@@ -83,11 +87,9 @@ print(f"{s[a:b+1]} {s[c:d+1]}")</code></pre>
         <button class="active" data-metric="time">Time</button>
         <button data-metric="space">Space</button>
       </div>
-      <div class="metrics">
-        <div class="metric">
-          <strong id="metric-value">O(k)</strong>
-          <span id="metric-label">Python copies the two returned slices; k is the total returned character count.</span>
-        </div>
+      <div class="metric">
+        <strong id="metric-value">O(k)</strong>
+        <span id="metric-label">Python copies the two returned slices; k is the total returned character count.</span>
       </div>
     </section>
   </main>
